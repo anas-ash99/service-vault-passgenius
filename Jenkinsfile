@@ -8,8 +8,8 @@ properties([
 ])
 
 def IMAGE_TAG_NAME = generateTagName()
-def IMAGE_TAG = 'aashraf756/service-user-passgenius'
-def DEPLOYMENT_FILE_PATH = "overlays\\dev\\user"
+def IMAGE_TAG = 'aashraf756/service-vault-passgenius'
+def DEPLOYMENT_FILE_PATH = "overlays\\dev\\vault"
 def shouldDeploy =  "${params.DEPLOY}".toBoolean()
 
 pipeline {
